@@ -52,7 +52,7 @@ I have implemented GroupChat Application using MEAN Stack and for real time comm
 
 ### Private Chat(It will be implemented soon)
 
-# I will now be explaining how sockets is used here in the application for sending messages,emitting events,leaving the room, joining the room and showing the number of online users in particular room
+- I will now be explaining how sockets is used here in the application for sending messages,emitting events,leaving the room, joining the room and showing the number of online users in particular room
 
 
 
