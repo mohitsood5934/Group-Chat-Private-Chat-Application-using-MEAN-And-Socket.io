@@ -15,7 +15,6 @@ I have implemented GroupChat Application using MEAN Stack and for real time comm
 - It is mostly dependent on NPM.
 - It is fast and reliable.Whenever any event occurs the server will get that event  and emit the event to particular connected client.
 
-### Following are  the things that I have implemented
 ### Login and Signup  
 - There is Login and Signup options for the user.I have used JWT Authentication for the user authentication.If you are not familiar with JWT then please check out this first [https://github.com/mohitsood5934/Implementing-JWT-using-Node.js]
 ![image](https://user-images.githubusercontent.com/26309496/72407845-e37d3380-3786-11ea-9114-cbe837510a09.png)
@@ -50,9 +49,10 @@ I have implemented GroupChat Application using MEAN Stack and for real time comm
 #  Second User
 ![image](https://user-images.githubusercontent.com/26309496/72409264-3953da80-378b-11ea-9d76-3627d8e4fa00.png)
 
+- Private Chat will be implemented soon
 
-
-    
+Thanks and Regards
+Mohit Sood
 
   
 
