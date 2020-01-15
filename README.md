@@ -1,4 +1,4 @@
-# Group-Chat-Private-Chat-Application-using-MEAN-And-Socket.io
+## Group-Chat-Private-Chat-Application-using-MEAN-And-Socket.io
 I have implemented GroupChat Application using MEAN Stack and for real time communication like sending messages ,joining and leaving rooms ,I have used Socket.IO which is a library for Real Time Web Applications.The purpose of the project is to become capable of using socket.io for RTC(Real Time Communication).
 
 ## Technologoies Used:
@@ -42,7 +42,7 @@ I have implemented GroupChat Application using MEAN Stack and for real time comm
 
 
 ## Leaving of the Room 
-- - Users can leave the room by pressing Leave Room button
+-  Users can leave the room by pressing Leave Room button
 # First User 
 ![image](https://user-images.githubusercontent.com/26309496/72409240-2a6d2800-378b-11ea-862c-2bb13ce3a518.png)
 
