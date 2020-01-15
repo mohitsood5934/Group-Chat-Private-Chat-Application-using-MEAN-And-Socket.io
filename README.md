@@ -50,9 +50,9 @@ I have implemented GroupChat Application using MEAN Stack and for real time comm
 #  Second User
 ![image](https://user-images.githubusercontent.com/26309496/72409264-3953da80-378b-11ea-9d76-3627d8e4fa00.png)
 
-### Private Chat(It will be implemented soon)
 
-- I will now be explaining how sockets is used here in the application for sending messages,emitting events,leaving the room, joining the room and showing the number of online users in particular room
+
+# I will now be explaining how sockets is used here in the application for sending messages,emitting events,leaving the room, joining the room and showing the number of online users in particular room
 
 
 
