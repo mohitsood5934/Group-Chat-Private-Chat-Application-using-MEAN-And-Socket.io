@@ -1,0 +1,60 @@
+<br>
+<br>
+<div class="container">
+  <div class="row">
+   <div class="col-md-3">
+
+   </div>
+   <div class="col-md-5">
+    
+      <mat-card class="example-card">
+          <mat-card-header>
+                  
+            <mat-card-title><span style="color:LightCoral ">Chat Application</span></mat-card-title>
+            <mat-card-subtitle></mat-card-subtitle>
+          </mat-card-header>
+         
+          <mat-card-content>
+            <h6 style="color:indigo">Login with your credentials</h6>
+            <form [formGroup]="loginForm">
+              <div class="example-container">
+                    <mat-form-field>
+                       <input matInput placeholder="Email"  [(ngModel)]="email" name="email" formControlName="email" >
+                   </mat-form-field>
+                   <br>
+            <!--display error message -->
+            <span *ngIf="loginForm.get('email').dirty || loginForm.get('email').touched">
+              <span *ngIf="loginForm.get('email').errors?.required" class="text text-danger" id="emailError">Email is required</span>
+               
+             </span> 
+
+              <br>
+              
+                <mat-form-field>
+                  <input type="password" matInput placeholder="Password" name="password" formControlName="password" [(ngModel)]="password">
+                </mat-form-field>
+                 <br>
+                  <!--display error message -->
+            <span *ngIf="loginForm.get('password').dirty || loginForm.get('password').touched">
+              <span *ngIf="loginForm.get('password').errors?.required" class="text text-danger" id="passwordError">Password is required</span>
+               
+             </span> 
+              
+              
+              </div>
+              </form>
+            
+          </mat-card-content>
+
+          <mat-card-actions>
+             
+           
+            <button type ="submit" mat-raised-button color="primary" class="login" (click)="submit()" [disabled]="!loginForm.valid">Login</button>
+             <div *ngIf="error_message!=null">
+               <span style="color:red">{{error_message}}</span>
+             </div>
+          </mat-card-actions>
+        </mat-card>
+        </div>
+</div>
+</div>

@@ -1,0 +1,21 @@
+<mat-toolbar color ="accent">
+  <mat-toolbar-row>
+    <button mat-icon-button>
+     
+    </button>
+    <h1>Socket.IO </h1>
+    <span class="menu-spacer"></span>
+    <div>
+       <!--  <a  mat-button  [routerLink]="'/chat'" routerLinkActive="active" *ngIf="auth.loggedIn">GroupChat</a>-->
+         <a  mat-button  [routerLink]="'/chat'"  [state]="{email:'node'}"   routerLinkActive="active" *ngIf="auth.loggedIn">GroupChat</a>
+         <a  mat-button  [routerLink]="'/privatechat'" routerLinkActive="active" *ngIf="auth.loggedIn">PrivateChat</a>
+         <a  mat-button  [routerLink]="'/login'" routerLinkActive="active" *ngIf="!auth.loggedIn">Login</a>
+         <a  mat-button  [routerLink]="'/signup'" routerLinkActive="active" *ngIf="!auth.loggedIn">Signup</a>
+         <a  mat-button  href="#" (click)="logout()" *ngIf="auth.loggedIn">Logout</a>
+
+      </div>
+</mat-toolbar-row>
+
+</mat-toolbar>
+
+<router-outlet></router-outlet>

@@ -1,0 +1,5 @@
+::1 - - [27/Dec/2019:11:05:57 +0000] "POST /api/signup HTTP/1.1" 200 35 "http://localhost:4200/signup" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36"
+::1 - - [27/Dec/2019:11:06:06 +0000] "POST /api/signin HTTP/1.1" 200 191 "http://localhost:4200/chat" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36"
+::1 - - [27/Dec/2019:11:06:11 +0000] "GET / HTTP/1.1" 404 139 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36"
+::1 - - [27/Dec/2019:11:06:40 +0000] "POST /api/signup HTTP/1.1" 200 35 "http://localhost:4200/signup" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36"
+::1 - - [27/Dec/2019:11:06:50 +0000] "POST /api/signin HTTP/1.1" 200 191 "http://localhost:4200/chat" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36"

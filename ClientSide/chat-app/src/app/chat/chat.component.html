@@ -1,0 +1,86 @@
+<div class="container-fluid">
+    <form [formGroup]="chatForm">
+    <div class="row">
+         <div class="col-md-6">
+            <span style="color:black;"><b>Welcome,{{userInfo.email}}</b></span>
+             <mat-card>
+                <mat-card-header>
+                    <mat-card-title><span style="color:LightCoral ">Group Chat Application</span></mat-card-title>
+                     <mat-card-subtitle></mat-card-subtitle>
+                </mat-card-header>
+                  <mat-card-content>
+                     <h6 style="color:indigo"></h6>
+                     <h6 style="color:indigo">Join any room</h6>
+                    <!--UserName-->
+                    <mat-form-field>
+                           <input matInput type="text" [(ngModel)]="userJoined" formControlName="user" required id="username" placeholder="Enter username">
+                    </mat-form-field><br>
+                        <!--display error message -->
+                   <span *ngIf="chatForm.get('user').dirty || chatForm.get('user').touched">
+                      <span *ngIf="chatForm.get('user').errors?.required" class="text text-danger" id="userError">User is required</span>
+                     </span> 
+                    <br>
+                    <br>
+                   <!--Select Room-->
+                    <mat-form-field  >
+                        <mat-select formControlName="room"  [(ngModel)]="roomJoined" required (change)="changeRoom($event)" placeholder="Select Room">
+                           <mat-option *ngFor="let room of roomsForChat" [value]="room">
+                             {{room}}
+                         </mat-option>
+                        </mat-select>
+                    </mat-form-field><br>
+                  <!--display error message -->
+                  <span *ngIf="chatForm.get('room').dirty || chatForm.get('room').touched">
+                    <span *ngIf="chatForm.get('room').errors?.required" class="text text-danger" id="roomError">Room is required</span>
+                   </span> 
+                  <br>
+                  <br>
+                <br>
+                <button mat-raised-button color="primary" (click)="join()" [disabled]="joined" >Join Room</button>&nbsp;&nbsp;
+                <button mat-raised-button color="accent" (click)="leave()" >Leave Room</button>  
+                <br>
+                <div *ngIf="join_message!=null">
+                   <h5> <span style="color:red;"> {{join_message}}</span></h5>
+                </div>
+                <div *ngIf="leave_message!=null">
+                   <h5> <span style="color:red;">{{leave_message}}</span></h5>
+                </div>
+                </mat-card-content>
+                <mat-card-actions>
+                   
+                </mat-card-actions>
+              </mat-card>
+
+              </div>
+
+              <div class="col-md-6">
+                  <span style="color:crimson"><h4>Total Users Online:{{count}}</h4></span>
+
+                <mat-card>
+                    <mat-card-header>
+            
+                        <mat-card-title><span style="color:LightCoral ">Group Chat Box</span></mat-card-title>
+                         
+                    </mat-card-header>
+                    <mat-card-content>
+                        <div class="well" style="height:200px; padding:15px;">
+                            <div *ngFor="let item of messageArray">
+                             <span><strong>{{item.user}} : </strong> {{item.message}}</span>
+                             </div>
+                        </div>
+                        <mat-form-field>
+                        <input type="text" matInput formControlName="messageText" [(ngModel)]="messageText" id='messageText' placeholder="Enter Message">   
+                        </mat-form-field>
+                    </mat-card-content>
+                    <mat-card-actions>
+                                 
+                        <button type="button" class="btn btn-success pull-right" (click)="sendMessage()" id="send">Send</button>
+                    </mat-card-actions>
+                  </mat-card>
+    
+
+              </div>
+          
+        </div>
+        </form>
+        </div>

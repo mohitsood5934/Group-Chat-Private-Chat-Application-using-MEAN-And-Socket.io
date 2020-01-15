@@ -1,0 +1,59 @@
+<div class="container">
+    <div class="row">
+     <div class="col-md-3">
+  
+     </div>
+     <div class="col-md-5">
+      
+        <mat-card class="example-card">
+            <mat-card-header>
+                    
+              <mat-card-title><span style="color:LightCoral ">Chat Application</span></mat-card-title>
+              <mat-card-subtitle></mat-card-subtitle>
+            </mat-card-header>
+           
+            <mat-card-content>
+              <h6 style="color:indigo">Sign up here to join !! </h6>
+              <form (ngSubmit)="submit()" >
+                <div class="example-container">
+                    <mat-form-field>
+                        <input matInput placeholder="Name"  [(ngModel)]="name" name="name" class="name" class="form-control">
+                    </mat-form-field>
+               <br>
+                   <mat-form-field>
+                        <input matInput placeholder="NickName"  [(ngModel)]="nickName" name="nickName" class="nickName" class="form-control">
+                   </mat-form-field>
+               <br>
+                    <mat-form-field>
+                        <input matInput placeholder="Email"  [(ngModel)]="email" name="email" class="email" class="form-control">
+                    </mat-form-field>
+              <br>
+                      <mat-form-field>
+                         <input matInput placeholder="Mobile Number"  [(ngModel)]="mobNumber" name="mobNumber" class="mobNumber" class="form-control">
+                     </mat-form-field>
+                <br>
+                
+                  <mat-form-field>
+                    <input type="password" matInput placeholder="Password"  name="password"  [(ngModel)]="password" class="form-control">
+                  </mat-form-field>
+                </div>
+                </form>
+              
+            </mat-card-content>
+  
+            <mat-card-actions>
+               
+             
+              <button type ="submit" mat-raised-button color="primary" class="login" (click)="submit()" [disabled]="success_message!=null">Sign Up</button>
+              <div *ngIf="success_message!=null">
+                <span class="text text-danger">{{success_message}}</span>
+                <a  mat-button  [routerLink]="'/login'" routerLinkActive="active" *ngIf="!auth.loggedIn" color="primary">Login</a>
+              </div>
+              <div *ngIf="error_message!=null">
+                {{error_message}}
+              </div>
+            </mat-card-actions>
+          </mat-card>
+          </div>
+  </div>
+  </div>
