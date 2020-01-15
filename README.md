@@ -22,7 +22,7 @@ I have implemented GroupChat Application using MEAN Stack and for real time comm
 - Now firstly we have to signup ,so that we can login in to our application
 ![image](https://user-images.githubusercontent.com/26309496/72408319-7f5b6f00-3788-11ea-8024-c7d819ca3ea4.png)
 - Now we can see,user"s record is successfully stored in the database.
-![image](https://user-images.githubusercontent.com/26309496/72408426-e6792380-3788-11ea-90a9-e15816befe30.png)
+![image](https://user-images.githubusercontent.com/26309496/72409421-b8e1a980-378b-11ea-9597-5f67db1a5c2d.png)
 - Now we can login in to our application
 ![image](https://user-images.githubusercontent.com/26309496/72408451-ff81d480-3788-11ea-9015-4be35f08859e.png)
 
